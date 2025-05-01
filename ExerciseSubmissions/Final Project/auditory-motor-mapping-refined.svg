@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- White background -->
+  <rect x="0" y="0" width="800" height="700" fill="white"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle">Auditory-Motor Mapping Experiment</text>
+  
+  <!-- Main red box outline -->
+  <rect x="150" y="80" width="500" height="500" fill="none" stroke="red" stroke-width="3"/>
+  
+  <!-- Vertical divider -->
+  <line x1="400" y1="80" x2="400" y2="580" stroke="black" stroke-width="1.5"/>
+  
+  <!-- Horizontal divider -->
+  <line x1="150" y1="330" x2="650" y2="330" stroke="black" stroke-width="1.5"/>
+  
+  <!-- Vowel labels directly on the horizontal line -->
+  <text x="275" y="325" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">/i/</text>
+  <text x="525" y="325" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">/a/</text>
+  
+  <!-- Top left quadrant info -->
+  <text x="275" y="130" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">High Pitch (350Hz)</text>
+  <text x="275" y="160" font-family="Arial" font-size="16" text-anchor="middle">F1: 300Hz</text>
+  <text x="275" y="185" font-family="Arial" font-size="16" text-anchor="middle">F2: 2300Hz</text>
+  
+  <!-- Top right quadrant info -->
+  <text x="525" y="130" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">High Pitch (350Hz)</text>
+  <text x="525" y="160" font-family="Arial" font-size="16" text-anchor="middle">F1: 700Hz</text>
+  <text x="525" y="185" font-family="Arial" font-size="16" text-anchor="middle">F2: 1200Hz</text>
+  
+  <!-- Bottom left quadrant info -->
+  <text x="275" y="480" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Low Pitch (80Hz)</text>
+  <text x="275" y="510" font-family="Arial" font-size="16" text-anchor="middle">F1: 300Hz</text>
+  <text x="275" y="535" font-family="Arial" font-size="16" text-anchor="middle">F2: 2300Hz</text>
+  
+  <!-- Bottom right quadrant info -->
+  <text x="525" y="480" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Low Pitch (80Hz)</text>
+  <text x="525" y="510" font-family="Arial" font-size="16" text-anchor="middle">F1: 700Hz</text>
+  <text x="525" y="535" font-family="Arial" font-size="16" text-anchor="middle">F2: 1200Hz</text>
+  
+  <!-- X-axis label - only major label, without the color bar line above -->
+  <text x="400" y="630" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">X-axis: Vowel Formants (F1, F2)</text>
+  
+  <!-- Y-axis label - only major label -->
+  <text x="100" y="330" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" transform="rotate(-90 100 330)">Y-axis: Pitch (80-350Hz)</text>
+  
+  <!-- Pitch transition bar on the left -->
+  <linearGradient id="pitchGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:rgb(255,128,0);stop-opacity:1" />
+    <stop offset="50%" style="stop-color:rgb(255,0,128);stop-opacity:1" />
+    <stop offset="100%" style="stop-color:rgb(0,128,255);stop-opacity:1" />
+  </linearGradient>
+  <rect x="120" y="155" width="20" height="350" fill="url(#pitchGradient)" />
+</svg>
